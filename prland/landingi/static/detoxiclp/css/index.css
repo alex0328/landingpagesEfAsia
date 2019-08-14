@@ -1,0 +1,693 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.logo a {
+    display: inline-block;
+    vertical-align: middle;
+    color: #a5a5a5;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    text-decoration: none;
+    color: #a5a5a5
+}
+
+.comment_img {
+    width: 300px;
+    max-width: 100%;
+}
+
+.logo img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header ul {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    font-size: 0;
+    width: calc(100% - 193px);
+    text-align: right;
+}
+
+.header .content {
+    border-bottom: 1px solid #ccc;
+}
+
+.header ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #565656;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    text-align: center;
+}
+
+.header ul li a:hover {
+    color: #2981b7
+}
+
+.cenz-image {
+    display: inline-block;
+    background-image: url(../images/18_plus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    border: 5px solid red;
+    cursor: pointer;
+}
+
+.cenz-image img {
+    visibility: hidden;
+}
+
+.cenz-image.cenz-show {
+
+    border: none;
+}
+
+.cenz-image.cenz-show img {
+    visibility: visible;
+}
+
+h1 {
+    display: block;
+    width: auto;
+    line-height: 1.2;
+    color: rgb(10, 10, 10);
+    font-size: 23px;
+}
+
+h2 {
+    display: block;
+    line-height: 1.2;
+    color: rgb(10, 10, 10);
+    font-size: 19px;
+    margin-top: 25px;
+}
+
+h2::after {
+    content: "";
+    margin-top: 12px;
+    border-bottom: 4px solid rgb(22, 141, 226);
+    display: block;
+}
+
+a {
+    color: rgb(35, 82, 124);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: rgb(176, 73, 59);
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-width: 1px 0px 0px;
+    border-style: solid none none;
+    border-color: rgb(238, 238, 238) currentcolor currentcolor;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+}
+
+body {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    background: rgb(250, 250, 250) none repeat scroll 0% 0%;
+    height: auto;
+    color: rgb(68, 68, 68);
+    line-height: 1.35em;
+    overflow-x: hidden;
+}
+
+.header {
+    display: block;
+    width: 100%;
+    background: transparent none repeat scroll 0% 0%;
+    margin: 0px auto;
+}
+
+.content {
+    display: block;
+    width: 97%;
+    max-width: 1000px;
+    margin: 0px auto;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    padding: 25px 1.5%;
+    position: relative;
+}
+
+.content-left {
+    display: block;
+}
+
+.content-left-social {
+    display: block;
+    width: 96%;
+    background: rgb(238, 238, 238) none repeat scroll 0% 0%;
+    padding: 1% 2%;
+    margin: 15px 0px;
+}
+
+.content-left-social-comments {
+    display: block;
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-size: 13px;
+}
+
+.content-left-social-comments a {
+    margin-left: 1%;
+}
+
+.content-left-social::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content-left-doctor {
+    display: block;
+    width: 96%;
+    background-color: rgb(226, 226, 226);
+    padding: 2%;
+    margin-top: 25px;
+}
+
+.content-left-doctor-foto {
+    display: block;
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+
+.content-left-doctor-foto img {
+    width: 100%;
+    display: block;
+}
+
+.content-left-doctor-text {
+    display: block;
+    width: 50%;
+    float: right;
+}
+
+.content-left-doctor::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content-important {
+    display: block;
+    width: auto;
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.vk-container {
+    font-family: tahoma, arial, verdana, sans-serif;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.vk-header {
+    background: rgb(218, 226, 232) none repeat scroll 0% 0%;
+    padding: 4px 4px 4px 6px;
+    margin-bottom: 10px;
+}
+
+.vk-logo {
+    background: transparent none no-repeat scroll 0% 0%;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-top: -1px;
+}
+
+.vk-header-text {
+    padding: 2px 3px 1px;
+    line-height: 100%;
+    color: rgb(69, 104, 142);
+    font-weight: bold;
+}
+
+.vk-comment,
+.vk-comment-load {
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 1px solid rgb(218, 225, 232);
+    padding-bottom: 15px;
+}
+
+.vk-avatar img {
+    float: left;
+    margin-right: 10px;
+}
+
+.vk-comment-name {
+    color: rgb(43, 88, 122);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.vk-comment-text {
+    margin-left: 60px;
+}
+
+.vk-comment-date {
+    margin-left: 60px;
+    color: rgb(153, 153, 153);
+}
+
+.content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media screen and (max-width: 1199px) {
+    .content-left {
+        width: 100%;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 989px) {
+    .content {
+        max-width: 750px;
+        padding: 3% 6%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .content-left-social-comments {
+        font-size: 2.8vw;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .content-left-doctor-foto {
+        float: none;
+        width: 100%;
+    }
+
+    .content-left-doctor-text {
+        float: none;
+        width: 100%;
+        margin-top: 3%;
+    }
+}
+
+#popup-coment {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: auto;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 1px solid rgb(218, 226, 232);
+    padding: 10px;
+    z-index: 100;
+    max-width: 375px;
+}
+
+#popup-coment .vk-comment-load {
+    margin-bottom: 0px;
+    border-bottom: 0px none;
+    padding-bottom: 0px;
+    position: relative;
+}
+
+#popup-coment .vk-comment-text {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+#popup-coment .vk-comment-date {
+    padding-bottom: 5px;
+}
+
+.vk-comment-read {
+    display: block;
+    width: auto;
+    background: rgb(69, 104, 142) none repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    padding: 5px 15px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.6s ease 0s;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.vk-comment-read:hover {
+    opacity: 0.7;
+    color: rgb(255, 255, 255);
+    background: rgb(69, 104, 142) none repeat scroll 0% 0%;
+}
+
+.vk-comment-close {
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 7%;
+    cursor: pointer;
+}
+
+.vk-comment-close img {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    #popup-coment {
+        bottom: 10px;
+        left: 10px;
+        background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+        border: 1px solid rgb(218, 226, 232);
+        padding: 10px;
+        z-index: 100;
+        max-width: 315px;
+        width: 86%;
+    }
+
+    #popup-coment .vk-comment-text {
+        position: relative;
+        margin-bottom: 5px;
+    }
+
+    #popup-coment .vk-comment-date {
+        padding-bottom: 40px;
+    }
+
+    .vk-comment-read {
+        right: 20px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 468px) {
+    #popup-coment .vk-comment-text {
+        position: relative;
+        overflow: hidden;
+        height: 95px;
+        margin-bottom: 5px;
+    }
+
+    #popup-coment .vk-comment-text::after {
+        content: "...";
+        display: block;
+        position: absolute;
+        right: 5px;
+        bottom: 6px;
+        font-size: 15px;
+    }
+
+    #popup-coment .vk-comment-date {
+        padding-bottom: 40px;
+    }
+
+    .vk-comment-read {
+        right: 20px;
+    }
+}
+
+.rub-ramka {
+    margin-top: 22px;
+    margin-bottom: 18px;
+    background: rgba(189, 61, 77, 0.04);
+    padding: 12px 15px !important;
+    color: rgb(8, 8, 8);
+    font-size: 18px;
+    font-family: roboto condensed, arial;
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: #bd3d4d;
+    text-shadow: 0 0 0 #616161;
+    text-indent: 0 !important;
+    text-align: left;
+}
+
+.pic {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.pic .product {
+    max-width: 100%;
+
+}
+
+.pic img {
+    display: block;
+    width: 100%;
+}
+
+@media all and (max-width: 1023px) {
+
+    .header ul,
+    .content-left-social {
+        display: none;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot');
+    src: url('../fonts/fontello.eot#iefix') format('embedded-opentype'),
+        url('../fonts/fontello.woff2') format('woff2'),
+        url('../fonts/fontello.woff') format('woff'),
+        url('../fonts/fontello.ttf') format('truetype'),
+        url('../fonts/fontello.svg#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-cloud:before {
+    content: '\e800';
+}
+
+/* '' */
+.icon-stethoscope:before {
+    content: '\f0f1';
+}
+
+/* '' */
+.icon-medkit:before {
+    content: '\f0fa';
+}
+
+
+.dk {
+    background-color: rgb(241, 243, 245);
+    border-radius: 10px;
+    padding: 7px;
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.dk p:first-child {
+    margin-top: 0;
+}
+
+.dk p:last-child {
+    margin-bottom: 0;
+}
+
+/* 
+.dk.doc b:first-child {
+    color: red;
+}  */
+
+.dk.doc b.name {
+    color: red;
+}
+
+
+.dk.kor b.name {
+    color: blue;
+}
+
+.dk.doc:before {
+    content: "";
+    background: rgba(0, 0, 0, 0) url(../images/doccircle.jpg) no-repeat scroll 0% 0% / 100% auto;
+    float: left;
+    padding: 47px;
+    margin-right: 10px;
+}
+
+.dk.kor:before {
+    content: "";
+    background: rgba(0, 0, 0, 0) url(../images/kor.jpg) no-repeat scroll 0% 0% / 100% auto;
+    float: left;
+    padding: 47px;
+    margin-right: 10px;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#comment_num {
+    border-bottom: 1px dashed #365398;
+    color: #365398;
+    font-weight: bold;
+}
+
+.comments #comment_num {
+    display: none;
+}
+
+.no-wht {
+    color: #fff;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 500px;
+    line-height: 1.3;
+}
+
+.whatsappinfo {
+    margin-top: 100px;
+    border: 2px solid red;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+
+    animation: 1s pulse infinite alternate ease-in-out, 1s shadow infinite alternate ease-in-out;
+    color: rgb(60, 168, 76);
+
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0px 0px 5px rgba(255, 0, 0, 0);
+    }
+
+    70% {
+        box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.5);
+    }
+
+    100% {
+        box-shadow: 0px 0px 5px rgba(255, 0, 0, 1);
+    }
+}
+
+.comment h2:after {
+    display: none;
+}
+
+#comment-component-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-comment {
+    order: 5;
+}
+
+.firstComment {
+    order:3;
+}
+
+.newComment {
+    order:4;
+}
+
+.comment__text a {
+    color:red;
+}
+
+.timer_wrap {
+    display: inline-block;
+}
+
